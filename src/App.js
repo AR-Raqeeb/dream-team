@@ -3,9 +3,7 @@ import './App.css';
 import Player from './Components/Players/Players';
 import Cart from './Components/Players/TeamDetailsCart/Cart';
 import playerInfo from './fakeData/data.json';
-
-
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
   const [players, setPlayers] = useState([]);
@@ -14,7 +12,6 @@ const App = () => {
   
   useEffect(() => {
     setPlayers(playerInfo);
-    console.log(playerInfo);
   }, [])
 
   // useEffect(() => {
@@ -27,6 +24,7 @@ const App = () => {
   const handleAddPlayer = (player) => {
     const newCart = [...cart, player];
     setCart(newCart);
+    console.log("newCart", newCart)
   }
 
   return (
