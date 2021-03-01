@@ -19,14 +19,6 @@ const playerInfo = (props) => {
                 <button href="#" className="btn btn-primary" onClick={() => handleAddPlayer(props.player)}>Sign Player <span><FontAwesomeIcon icon={faPlus} /></span></button>
             </div>
         </div>
-        // <div style={playerCardStyle}>
-        //     <div>
-        //     <img style={playerImageStyle} src={image} alt=""/>
-        //     <h2>{name}</h2>
-        //     <p>Salary: {salary}</p>
-        //     <button classNameName='btn btn-danger' onClick={() => handleAddPlayer(props.player)}>Sign Player</button>
-        //     </div>
-        // </div>
     );
 };
 

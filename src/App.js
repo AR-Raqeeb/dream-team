@@ -7,24 +7,15 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
   const [players, setPlayers] = useState([]);
-  //const [countries, setCountries] = useState([]);
   const [cart, setCart] = useState([]);
   
   useEffect(() => {
     setPlayers(playerInfo);
   }, [])
-
-  // useEffect(() => {
-  //   fetch('https://restcountries.eu/rest/v2/all')
-  //   .then(res => res.json())
-  //   .then(data => setCountries(data))
-  //   .catch(error => console.log(error))    
-  // }, [])
   
   const handleAddPlayer = (player) => {
     const newCart = [...cart, player];
     setCart(newCart);
-    console.log("newCart", newCart)
   }
 
   return (
